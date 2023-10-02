@@ -39,7 +39,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@3
+      - uses: actions/checkout@v3
 
       - name: call home
         run: echo SLUTA
+
+      - name: is google alive?
+        run: curl https://google.com
