@@ -34,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  sleep:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@3
+
+      - name: call home
+        run: echo SLUTA
